@@ -1,0 +1,158 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>test</title><meta name="generator" content="MATLAB 8.6"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2017-07-29"><meta name="DC.source" content="test.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">question 1</a></li><li><a href="#2">QUESTION 2</a></li><li><a href="#3">QUESTION3</a></li><li><a href="#4">Question 4</a></li><li><a href="#5">Question 5</a></li></ul></div><h2>question 1<a name="1"></a></h2><pre class="codeinput">a=[2 6 5 2;8 3 1 5;3 5 3 6;5 9 7 1; 8 7 2 4];
+B=reshape(a,[4,5]);
+disp(B);
+C=a';
+disp(C);
+B=[a(:,1),zeros(5,1),a(:,2),zeros(5,1),a(:,3),zeros(5,1),a(:,4)];
+disp(B);
+</pre><pre class="codeoutput error">Error using dbstatus
+Error: File: C:\Users\Snehal\Documents\MATLAB\test.m Line: 18 Column: 1
+Function definitions are not permitted in this context.
+</pre><h2>QUESTION 2<a name="2"></a></h2><pre class="codeinput">A=[1 2 3;4 5 6;7 8 9];
+E=padarray(A,[1,2],0,<span class="string">'pre'</span>);
+disp(E);
+</pre><h2>QUESTION3<a name="3"></a></h2><pre class="codeinput">fun = @(x) x.*exp(-x.^0.8)+0.2;
+AW=integral(fun,0,8);
+disp(AW);
+</pre><h2>Question 4<a name="4"></a></h2><pre class="codeinput"><span class="keyword">function</span> [Area]=triangle(a,b,c)
+s=(a+b+c)/2;
+Area=sqrt(s.*(s-a).*(s-b).*(s-c));
+<span class="keyword">end</span>
+triangle(3,8,10);
+triangle(7,7,5);
+</pre><h2>Question 5<a name="5"></a></h2><pre class="codeinput">img=imread(<span class="string">'lena.jpg'</span>);
+arr=size(img);
+r=arr(1);
+g=arr(2);
+b=arr(3);
+fprintf(<span class="string">'%d %d %d \n'</span>,r,g,b);
+<span class="comment">%%section</span>
+
+rgb=rgb2gray(img);
+mask=ones(size(img));
+<span class="keyword">for</span> i=10:10:r
+    <span class="keyword">for</span> j=1:g
+        mask(i,j)=0;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+ans2=mask.*mask;
+disp(ans2);
+publish(<span class="string">'test.m'</span>,<span class="string">'pdf'</span>)
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2015b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% question 1
+a=[2 6 5 2;8 3 1 5;3 5 3 6;5 9 7 1; 8 7 2 4];
+B=reshape(a,[4,5]);
+disp(B);
+C=a';
+disp(C);
+B=[a(:,1),zeros(5,1),a(:,2),zeros(5,1),a(:,3),zeros(5,1),a(:,4)];
+disp(B);
+%% QUESTION 2
+A=[1 2 3;4 5 6;7 8 9];
+E=padarray(A,[1,2],0,'pre');
+disp(E);
+%% QUESTION3 
+fun = @(x) x.*exp(-x.^0.8)+0.2;
+AW=integral(fun,0,8);
+disp(AW);
+%% Question 4
+function [Area]=triangle(a,b,c)
+s=(a+b+c)/2;
+Area=sqrt(s.*(s-a).*(s-b).*(s-c));
+end
+triangle(3,8,10);
+triangle(7,7,5);
+%% Question 5
+img=imread('lena.jpg');
+arr=size(img);
+r=arr(1);
+g=arr(2);
+b=arr(3);
+fprintf('%d %d %d \n',r,g,b);
+%%section
+
+rgb=rgb2gray(img);
+mask=ones(size(img));
+for i=10:10:r
+    for j=1:g
+        mask(i,j)=0;
+    end
+end
+ans2=mask.*mask;
+disp(ans2);
+publish('test.m','pdf')
+        
+
+
+
+##### SOURCE END #####
+--></body></html>
